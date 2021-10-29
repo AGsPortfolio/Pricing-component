@@ -1,0 +1,56 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #6d708d;
+  background-color: #f6f6fe;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+.Toggle-switch {
+  display: grid;
+  grid-template-columns: 80px 60px 80px;
+  justify-content: center;
+}
+.Toggle-switch p {
+  color: #b3b5c6;
+}
+
+.Pricing-component {
+  display: grid;
+  grid-template-rows: 250px 250px 250px;
+  row-gap: 20px;
+  margin: 0% 5%;
+  text-align: center;
+}
+.Pricing-component .Basic {
+  background-color: white;
+  border-radius: 10px;
+}
+.Pricing-component .Basic #purpleButton {
+  background-image: linear-gradient(130deg, #a3a8f0, #696fdd);
+  color: white;
+}
+.Pricing-component .Professional {
+  background-image: linear-gradient(130deg, #a3a8f0, #696fdd);
+  color: white;
+  border-radius: 10px;
+}
+.Pricing-component .Professional #whiteButton {
+  background-color: white;
+  color: #696fdd;
+}
+.Pricing-component button {
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5%;
+  font-size: xx-small;
+}
+
+/*# sourceMappingURL=style.css.map */
