@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <script src="toggle.js"></script>
   
   <title>Pricing component with toggle switch</title>
 
@@ -16,31 +17,68 @@
   <header><h1>Our Pricing</h1></header>
   <section class="Toggle-switch">
     <p>Annually</p>
-    <label class="switch">
-      <input type="checkbox">
+    <div class="Switch-slider">
+    <label class="Switch">
+      <input id="checkbox" type="checkbox">
       <span class="slider round"></span>
     </label>
+  </div>
     <p>Monthly</p>
   </section>
 
   <main class="Pricing-component">
-    <section class="Basic">
-      <p>Basic</p>
-      <p id="price">$199.99</p>
-      <p>500 GB storage <br>2 users allowed <br>Send up to 3 GB</p>
-      <button id="purpleButton">LEARN MORE</button>
+    <section id="Annually">
+      <div class="Basic">
+        <h3>Basic</h3>
+        <p id="price">$199.99</p>
+        <p id="text"><br>500 GB storage</p> 
+        <p id="text"><br>2 users allowed</p>
+        <p id="text"><br>Send up to 3 GB</p>
+        <button id="purpleButton">LEARN MORE</button>
+      </div>
+      <div class="Professional">
+        <h3>Professional</h3>
+        <p id="price">$249.99</p>
+        <p id="text"><br>1 TB Storage</p>
+        <p id="text"><br>5 Users Allowed</p>
+        <p id="text"><br>Send up to 10 GB</p>
+        <button id="whiteButton">LEARN MORE</button>
+      </div>
+      <div class="Basic">
+        <h3>Master</h3>
+        <p id="price">$399.99</p>
+        <p id="text"><br> 2 TB Storage</p>
+        <p id="text"><br>10 Users Allowed</p>
+        <p id="text"><br>Send up to 20 GB</p>
+        <button id="purpleButton">LEARN MORE</button>
+      </div>
     </section>
-    <section class="Professional">
-      <p>Professional</p>
-      <p id="price">$249.99</p>
-      <p>1 TB Storage <br>5 Users Allowed <br>Send up to 10 GB</p>
-      <button id="whiteButton">LEARN MORE</button>
-    </section>
-    <section class="Basic">
-      <p>Master</p>
-      <p id="price">$399.99</p>
-      <p>2 TB Storage <br>10 Users Allowed <br>Send up to 20 GB</p>
-      <button id="purpleButton">LEARN MORE</button>
+
+    <section id="Monthly">
+      <div class="Basic">
+        <h3>Basic</h3>
+        <p id="price">$19.99</p>
+        <p id="text"><br>500 GB storage</p> 
+        <p id="text"><br>2 users allowed</p>
+        <p id="text"><br>Send up to 3 GB</p>
+        <button id="purpleButton">LEARN MORE</button>
+      </div>
+      <div class="Professional">
+        <h3>Professional</h3>
+        <p id="price">$24.99</p>
+        <p id="text"><br>1 TB Storage</p>
+        <p id="text"><br>5 Users Allowed</p>
+        <p id="text"><br>Send up to 10 GB</p>
+        <button id="whiteButton">LEARN MORE</button>
+      </div>
+      <div class="Basic">
+        <h3>Master</h3>
+        <p id="price">$39.99</p>
+        <p id="text"><br> 2 TB Storage</p>
+        <p id="text"><br>10 Users Allowed</p>
+        <p id="text"><br>Send up to 20 GB</p>
+        <button id="purpleButton">LEARN MORE</button>
+      </div>
     </section>
   </main>
 

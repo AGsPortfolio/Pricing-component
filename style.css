@@ -4,52 +4,147 @@ body {
   color: #6d708d;
   background-color: #f6f6fe;
   margin: 0;
+  background-image: url("bg-top.svg");
+  background-repeat: no-repeat;
 }
 
 header {
   text-align: center;
+  padding-top: 15%;
 }
 
 .Toggle-switch {
   display: grid;
   grid-template-columns: 80px 60px 80px;
   justify-content: center;
+  padding: 2% 0% 15%;
 }
 .Toggle-switch p {
   color: #b3b5c6;
+  line-height: 0px;
+  font-size: 80%;
+}
+.Toggle-switch .Switch-slider {
+  /* Hide default HTML checkbox */
+  /* The slider */
+}
+.Toggle-switch .Switch-slider .Switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 29px;
+}
+.Toggle-switch .Switch-slider .Switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.Toggle-switch .Switch-slider .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(130deg, #a3a8f0, #696fdd);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+.Toggle-switch .Switch-slider .slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f6f6fe;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+.Toggle-switch .Switch-slider input:checked + .slider {
+  background-image: linear-gradient(130deg, #a3a8f0, #696fdd);
+}
+.Toggle-switch .Switch-slider input:checked + .slider:before {
+  transform: translateX(15px);
 }
 
-.Pricing-component {
+.Pricing-component #Annually {
   display: grid;
-  grid-template-rows: 250px 250px 250px;
-  row-gap: 20px;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  margin: 0% 5%;
+  text-align: center;
+  row-gap: 2.5%;
+}
+.Pricing-component #Monthly {
+  display: none;
+  display: grid;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  row-gap: 2.5%;
   margin: 0% 5%;
   text-align: center;
 }
-.Pricing-component .Basic {
+.Pricing-component .Basic, .Pricing-component .Master, .Pricing-component .Professional {
   background-color: white;
   border-radius: 10px;
+  padding: 5% 0%;
 }
-.Pricing-component .Basic #purpleButton {
+.Pricing-component .Basic #price, .Pricing-component .Master #price, .Pricing-component .Professional #price {
+  font-size: 450%;
+  color: #454759;
+  margin: 20px 0px 30px;
+}
+.Pricing-component .Basic #price::first-letter, .Pricing-component .Master #price::first-letter, .Pricing-component .Professional #price::first-letter {
+  font-size: 50%;
+}
+.Pricing-component .Basic #text, .Pricing-component .Master #text, .Pricing-component .Professional #text {
+  border-top: 1px solid rgba(179, 181, 198, 0.5);
+  margin: 5% 5%;
+}
+.Pricing-component .Basic p:nth-child(5), .Pricing-component .Master p:nth-child(5), .Pricing-component .Professional p:nth-child(5) {
+  border-bottom: 1px solid rgba(179, 181, 198, 0.5);
+  padding-bottom: 5%;
+}
+.Pricing-component .Basic #purpleButton, .Pricing-component .Master #purpleButton, .Pricing-component .Professional #purpleButton {
   background-image: linear-gradient(130deg, #a3a8f0, #696fdd);
-  color: white;
+  color: #f6f6fe;
+}
+.Pricing-component .Basic #purpleButton:hover, .Pricing-component .Master #purpleButton:hover, .Pricing-component .Professional #purpleButton:hover {
+  color: #696fdd;
+  background-color: white;
+  background-image: none;
+  border: 1px solid #696fdd;
 }
 .Pricing-component .Professional {
   background-image: linear-gradient(130deg, #a3a8f0, #696fdd);
-  color: white;
+  color: #f6f6fe;
   border-radius: 10px;
 }
+.Pricing-component .Professional #price {
+  color: #f6f6fe;
+}
 .Pricing-component .Professional #whiteButton {
-  background-color: white;
-  color: #696fdd;
+  background-color: #f6f6fe;
+  color: linear-gradient(130deg, #a3a8f0, #696fdd);
+  border: 1px solid white;
+}
+.Pricing-component .Professional #whiteButton:hover {
+  color: white;
+  background-image: linear-gradient(130deg, #9197ed, #696fdd);
 }
 .Pricing-component button {
-  border: none;
+  border: transparent;
+  border-radius: 5px;
+  padding: 4% 31%;
+  margin: 5% 0%;
+  letter-spacing: 2px;
+  font-weight: bolder;
 }
 
 footer {
   text-align: center;
-  padding-top: 5%;
+  padding-top: 20%;
   font-size: xx-small;
 }
 
