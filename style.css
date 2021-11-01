@@ -1,23 +1,83 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-image: url("bg-top.svg");
+  }
+
+  header {
+    padding-top: 15%;
+  }
+
+  .Toggle-switch {
+    padding: 2% 0% 15%;
+  }
+
+  .Pricing-component #annually {
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    row-gap: 2.5%;
+  }
+  .Pricing-component #monthly {
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    row-gap: 2.5%;
+  }
+  .Pricing-component .Basic #price, .Pricing-component .Professional #price {
+    font-size: 450%;
+  }
+  .Pricing-component .Basic #text, .Pricing-component .Professional #text {
+    margin: 5% 5%;
+  }
+  .Pricing-component button {
+    padding: 4% 31%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("bg-bottom.svg");
+    background-position: bottom;
+  }
+
+  header {
+    padding-top: 3%;
+  }
+
+  .Toggle-switch {
+    padding: 1% 0% 5%;
+  }
+
+  .Pricing-component #annually {
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+  }
+  .Pricing-component #monthly {
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+  }
+  .Pricing-component .Basic #price, .Pricing-component .Professional #price {
+    font-size: 400%;
+  }
+  .Pricing-component .Basic #text, .Pricing-component .Professional #text {
+    margin: 5% 8%;
+  }
+  .Pricing-component button {
+    padding: 3% 25%;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #6d708d;
   background-color: #f6f6fe;
   margin: 0;
-  background-image: url("bg-top.svg");
   background-repeat: no-repeat;
 }
 
 header {
   text-align: center;
-  padding-top: 15%;
 }
 
 .Toggle-switch {
   display: grid;
   grid-template-columns: 80px 60px 80px;
   justify-content: center;
-  padding: 2% 0% 15%;
 }
 .Toggle-switch p {
   color: #b3b5c6;
@@ -70,47 +130,40 @@ header {
   transform: translateX(15px);
 }
 
-.Pricing-component #Annually {
+.Pricing-component #annually {
   display: grid;
-  grid-template-rows: 33.3% 33.3% 33.3%;
-  margin: 0% 5%;
-  text-align: center;
-  row-gap: 2.5%;
-}
-.Pricing-component #Monthly {
-  display: none;
-  display: grid;
-  grid-template-rows: 33.3% 33.3% 33.3%;
-  row-gap: 2.5%;
   margin: 0% 5%;
   text-align: center;
 }
-.Pricing-component .Basic, .Pricing-component .Master, .Pricing-component .Professional {
+.Pricing-component #monthly {
+  display: grid;
+  margin: 0% 5%;
+  text-align: center;
+}
+.Pricing-component .Basic, .Pricing-component .Professional {
   background-color: white;
   border-radius: 10px;
   padding: 5% 0%;
 }
-.Pricing-component .Basic #price, .Pricing-component .Master #price, .Pricing-component .Professional #price {
-  font-size: 450%;
+.Pricing-component .Basic #price, .Pricing-component .Professional #price {
   color: #454759;
   margin: 20px 0px 30px;
 }
-.Pricing-component .Basic #price::first-letter, .Pricing-component .Master #price::first-letter, .Pricing-component .Professional #price::first-letter {
+.Pricing-component .Basic #price::first-letter, .Pricing-component .Professional #price::first-letter {
   font-size: 50%;
 }
-.Pricing-component .Basic #text, .Pricing-component .Master #text, .Pricing-component .Professional #text {
+.Pricing-component .Basic #text, .Pricing-component .Professional #text {
   border-top: 1px solid rgba(179, 181, 198, 0.5);
-  margin: 5% 5%;
 }
-.Pricing-component .Basic p:nth-child(5), .Pricing-component .Master p:nth-child(5), .Pricing-component .Professional p:nth-child(5) {
+.Pricing-component .Basic p:nth-child(5), .Pricing-component .Professional p:nth-child(5) {
   border-bottom: 1px solid rgba(179, 181, 198, 0.5);
   padding-bottom: 5%;
 }
-.Pricing-component .Basic #purpleButton, .Pricing-component .Master #purpleButton, .Pricing-component .Professional #purpleButton {
+.Pricing-component .Basic #purpleButton, .Pricing-component .Professional #purpleButton {
   background-image: linear-gradient(130deg, #a3a8f0, #696fdd);
   color: #f6f6fe;
 }
-.Pricing-component .Basic #purpleButton:hover, .Pricing-component .Master #purpleButton:hover, .Pricing-component .Professional #purpleButton:hover {
+.Pricing-component .Basic #purpleButton:hover, .Pricing-component .Professional #purpleButton:hover {
   color: #696fdd;
   background-color: white;
   background-image: none;
@@ -136,7 +189,6 @@ header {
 .Pricing-component button {
   border: transparent;
   border-radius: 5px;
-  padding: 4% 31%;
   margin: 5% 0%;
   letter-spacing: 2px;
   font-weight: bolder;

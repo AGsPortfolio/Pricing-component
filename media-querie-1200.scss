@@ -1,0 +1,43 @@
+@media screen 
+and (min-width: 1200px) {
+    body {
+        background-image: url("bg-bottom.svg");
+        background-position: bottom;
+    }
+
+    header {
+        padding-top: 3%;
+    }
+
+    .Toggle-switch {
+        padding: 1% 0% 5%;
+    }
+
+    .Pricing-component {
+
+        #annually {
+            grid-template-columns: 25% 25% 25%;
+            justify-content: center;
+        }
+
+        #monthly {
+            grid-template-columns: 25% 25% 25%;
+            justify-content: center;
+        }
+
+        .Basic, .Professional {
+
+            #price {
+                font-size: 400%;
+            }
+
+            #text {
+                margin: 5% 8%;
+            }
+        } 
+        
+        button {
+            padding: 3% 25%;
+        }
+    }
+}
