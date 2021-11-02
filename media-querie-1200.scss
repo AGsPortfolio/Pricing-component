@@ -2,29 +2,28 @@
 and (min-width: 1200px) {
     body {
         background-image: url("bg-bottom.svg");
-        background-position: bottom;
+        background-position-y:130%;
     }
 
     header {
         padding-top: 3%;
     }
-
+    
     .Toggle-switch {
         padding: 1% 0% 5%;
     }
-
+    
     .Pricing-component {
+        background-image: url("bg-top.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: 100%;
 
-        #annually {
+        #annually, #monthly {
             grid-template-columns: 25% 25% 25%;
             justify-content: center;
         }
-
-        #monthly {
-            grid-template-columns: 25% 25% 25%;
-            justify-content: center;
-        }
-
+        
         .Basic, .Professional {
 
             #price {
@@ -39,5 +38,20 @@ and (min-width: 1200px) {
         button {
             padding: 3% 25%;
         }
+
+        .Basic:hover {
+            transform: scale(106%);
+            transition: transform .3s;
+        }
+
+        .Professional:hover {
+            transform: scale(106%);
+            transition: transform .4s;
+        }
+    }
+
+    footer {
+        margin: 0;
+        padding-top: 1%;
     }
 }

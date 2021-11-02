@@ -87,13 +87,7 @@ header {
 
 .Pricing-component {
     
-    #annually {
-        display: grid;
-        margin: 0% 5%;
-        text-align: center;
-    }
-    
-    #monthly {
+    #annually, #monthly {
         display: grid;
         margin: 0% 5%;
         text-align: center;
@@ -103,6 +97,8 @@ header {
         background-color: white;
         border-radius: 10px;
         padding: 5% 0%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
         
         #price {
             color: hsl(234, 13%, 31%);
@@ -120,13 +116,15 @@ header {
         p:nth-child(5) {
             border-bottom: 1px solid hsl(234, 14%, 74%, 0.5);
             padding-bottom: 5%;
-        }
-        
+        }   
+    }
+    
+    .Basic {
         #purpleButton {
             background-image: $gradient;
             color:$very-light-grayish-blue;
         }
-
+    
         #purpleButton:hover {
             color: hsl(237, 63%, 64%);
             background-color: white;
@@ -146,13 +144,13 @@ header {
         
         #whiteButton {
             background-color: $very-light-grayish-blue;
-            color: $gradient;
-            border: 1px solid white;
+            color: $dark-grayish-blue;
         }
-
+        
         #whiteButton:hover {
             color: white;
             background-image: linear-gradient(130deg, hsl(236, 72%, 75%), hsl(237, 63%, 64%));
+            border: 1px solid white;
         }
     }
 
@@ -165,10 +163,7 @@ header {
     }
 }
 
-
-
 footer {
     text-align: center;
-    padding-top: 20%;
     font-size: xx-small;
 }
