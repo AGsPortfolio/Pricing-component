@@ -1,15 +1,46 @@
-## The challenge
+## Table of contents
 
-Your users should be able to:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
 - Control the toggle with both their mouse/trackpad and their keyboard
-- **Bonus**: Complete the challenge with just HTML and CSS
 
-## Create a custom `README.md`
+### Links
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+- Code URL: https://github.com/AGsPortfolio/Pricing-component
+- Live Site URL: https://agsportfolio.github.io/Pricing-component/
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+## My process
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS used variables with colors
+- CSS media queries
+- CSS Grid
+- Mobile-first workflow
+
+### What I learned
+
+With this project it was my goal to extend my knowledge about media-queries, I used a lot op percentages which seem to work great. 
+I wanted to add a nice hover effect on the different price components and bumped into a problem with Safari, for the first time I use -webkit for Safari to get the right hover effect. 
+My knowledge of pseudo classes and elements has improved in this project. Nice to work with.
+
+It was a fun project with a nice learning curve.
+
+## Author
+
+- Website - [André Goossens](https://github.com/AGsPortfolio)
