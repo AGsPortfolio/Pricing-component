@@ -30,6 +30,108 @@
     padding-top: 20%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  body {
+    background-image: url("bg-bottom.svg");
+    background-position-y: 130%;
+  }
+
+  header {
+    padding-top: 1%;
+  }
+
+  .Toggle-switch {
+    padding: 0% 0% 3%;
+  }
+
+  .Pricing-component {
+    background-image: url("bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 100%;
+  }
+  .Pricing-component #annually, .Pricing-component #monthly {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-content: center;
+  }
+  .Pricing-component .Basic #price, .Pricing-component .Professional #price {
+    font-size: 300%;
+  }
+  .Pricing-component .Basic #text, .Pricing-component .Professional #text {
+    margin: 5% 8%;
+  }
+  .Pricing-component button {
+    padding: 3% 22%;
+  }
+  .Pricing-component .Basic:hover {
+    transform: scale(106%);
+    transition: transform 0.5s;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.4s;
+  }
+  .Pricing-component .Professional:hover {
+    transform: scale(106%);
+    transition: transform 0.5s;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.4s;
+  }
+
+  footer {
+    margin: 0;
+    padding-top: 1%;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  body {
+    background-image: url("bg-bottom.svg");
+    background-position-y: 130%;
+  }
+
+  header {
+    padding-top: 3%;
+  }
+
+  .Toggle-switch {
+    padding: 1% 0% 5%;
+  }
+
+  .Pricing-component {
+    background-image: url("bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 100%;
+  }
+  .Pricing-component #annually, .Pricing-component #monthly {
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+  }
+  .Pricing-component .Basic #price, .Pricing-component .Professional #price {
+    font-size: 400%;
+  }
+  .Pricing-component .Basic #text, .Pricing-component .Professional #text {
+    margin: 5% 8%;
+  }
+  .Pricing-component button {
+    padding: 3% 25%;
+  }
+  .Pricing-component .Basic:hover {
+    transform: scale(106%);
+    transition: transform 0.5s;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.4s;
+  }
+  .Pricing-component .Professional:hover {
+    transform: scale(106%);
+    transition: transform 0.5s;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.4s;
+  }
+
+  footer {
+    margin: 0;
+    padding-top: 1%;
+  }
+}
 @media screen and (min-width: 1200px) {
   body {
     background-image: url("bg-bottom.svg");
@@ -65,11 +167,15 @@
   }
   .Pricing-component .Basic:hover {
     transform: scale(106%);
-    transition: transform 0.3s;
+    transition: transform 0.5s;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.4s;
   }
   .Pricing-component .Professional:hover {
     transform: scale(106%);
-    transition: transform 0.4s;
+    transition: transform 0.5s;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.4s;
   }
 
   footer {

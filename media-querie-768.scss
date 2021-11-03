@@ -1,5 +1,6 @@
 @media screen 
-and (min-width: 1200px) {
+and (min-width: 801px)
+and (max-width: 1199px) {
     body {
         background-image: url("bg-bottom.svg");
         background-position-y:130%;
@@ -20,7 +21,7 @@ and (min-width: 1200px) {
         background-position-y: 100%;
 
         #annually, #monthly {
-            grid-template-columns: 25% 25% 25%;
+            grid-template-columns: 30% 30% 30%;
             justify-content: center;
         }
         

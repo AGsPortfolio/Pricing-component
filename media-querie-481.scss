@@ -1,16 +1,17 @@
 @media screen 
-and (min-width: 1200px) {
+and (min-width: 481px)
+and (max-width: 800px) {
     body {
         background-image: url("bg-bottom.svg");
         background-position-y:130%;
     }
 
     header {
-        padding-top: 3%;
+        padding-top: 1%;
     }
     
     .Toggle-switch {
-        padding: 1% 0% 5%;
+        padding: 0% 0% 3%;
     }
     
     .Pricing-component {
@@ -20,14 +21,14 @@ and (min-width: 1200px) {
         background-position-y: 100%;
 
         #annually, #monthly {
-            grid-template-columns: 25% 25% 25%;
+            grid-template-columns: 33.3% 33.3% 33.3%;
             justify-content: center;
         }
         
         .Basic, .Professional {
 
             #price {
-                font-size: 400%;
+                font-size: 300%;
             }
 
             #text {
@@ -36,7 +37,7 @@ and (min-width: 1200px) {
         } 
         
         button {
-            padding: 3% 25%;
+            padding: 3% 22%;
         }
 
         .Basic:hover {
